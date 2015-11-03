@@ -1,0 +1,78 @@
+<!doctype html>
+<html ng-app="crazyEight">
+  <head>
+    <title>Crazy Eight</title>
+    <link rel="stylesheet" href="/css/main.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <header class="ce-header">
+      <div class="logo">
+        <a href="#">
+          <img src="/img/logo.png" alt="Logo" />
+        </a>
+      </div>
+      <div class="ce-primary-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="ce-sidebar">
+        <ul class="ce-players-list" id="ce-players-list">
+
+        </ul>
+      </div>
+      <div class="ce-display-container">
+        <div class="box" id="box">
+
+        </div>
+        <div class="box3 no-display" id="box3">
+          <div class="row1 opponent-cards" id="opponentCards">
+            <ul>
+
+            </ul>
+          </div>
+          <div class="row2">
+	      <div class="showCard" id="drawACard">
+		<p>Draw<br />Card</p>
+              </div>
+              <div class="showCard" id="showCard">
+                <span class="card-rank"></span>
+                <span class="card-suit"></span>
+              </div>
+	      <div class="showCard" id="passTurn">
+		<p>Pass</p>
+              </div>
+          </div>
+          <div class="row3 my-cards" id="myCards">
+            <ul>
+
+            </ul>
+          </div>
+        </div>
+        <div class="messages" id="messages">
+
+        </div>
+      </div>
+    </main>
+<footer class='footer'>
+  <div class="title">Developed By:-</div>
+  <ul>
+      <li>
+        <a href="">Ankur Singhal</a>
+      </li>
+      <li>
+        <a href="">Anmol Goel</a>
+      </li>
+      <li>
+        <a href="">Utkarsh Mishra</a>
+      </li>
+    </ul>
+</footer>
+  </body>
+  <script src="/socket.io/socket.io.js" charset="utf-8"></script>
+  <script src="/js/lib/jquery.js" charset="utf-8"></script>
+  <script src="/js/main.js" charset="utf-8"></script>
+</html>
