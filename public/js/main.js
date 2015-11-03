@@ -16,7 +16,7 @@ $(document).ready(function() {
   });
 
   socket.on('onSetupGameForPlaying', function(data){
-	
+	$('#rules').hide();
     $(window.document.documentElement).addClass('start-game');
     $('#box3').removeClass('no-display').addClass('yes-display');
     delete(window.players);
